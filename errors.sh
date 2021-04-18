@@ -1,16 +1,16 @@
 #!/bin/bash
       
     clear
-if ! [[ -e error.logs ]] #Si el fitxer ja existeix, no el torna a descarregar
+if ! [[ -e error.logs ]] 
 then
 	wget http://www.collados.org/asix2/m06/uf2/error.logs
 fi
 
-echo -n "Especifiqui el dia (dd): "
+echo -n "Dia (DD): "
 read dia
-echo -n "Especifiqui el mes (mmm): "
+echo -n "Mes (MM): "
 read mes
-echo -n "Especifiqui l'any (yyyy): "
+echo -n "ANY (YYY): "
 read any
 
 datafitxer=$any$mes$dia
